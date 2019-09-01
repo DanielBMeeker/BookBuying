@@ -1,5 +1,5 @@
 package test;
-
+//Daniel Meeker
 import static org.junit.Assert.assertEquals;
 
 import org.junit.Before;
@@ -13,6 +13,9 @@ public class TestBook {
 	public void setUp() throws Exception {
 	}
 	@Test
+	//This test is set up so that it will test all of the ranges in the
+	//getPercentPaid() to make sure they are working properly. If any one
+	//fails the whole test will fail. 
 	public void testGetPercentPaid() {
 		one.setAvgDaysToSell(149);
 		assertEquals(one.getPercentPaid(), .10, 0);

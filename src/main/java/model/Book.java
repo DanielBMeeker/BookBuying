@@ -1,5 +1,5 @@
 package model;
-
+//Daniel Meeker
 public class Book {
 	private String title;
 	private String author;
