@@ -1,11 +1,32 @@
 package model;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 //Daniel Meeker
+
+@Entity
+@Table(name="items")
 public class Book {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="ID")
+	private int id;
+	@Column(name="TITLE")
 	private String title;
+	@Column(name="AUTHOR")
 	private String author;
+	@Column(name="ISBN")
 	private String ISBN;
+	@Column (name ="SALEPRICE")
 	private double salePrice;
+	@Column (name="AVGDAYSTOSELL")
 	private int avgDaysToSell;
+	@Column (name="PERCENTPAID")
 	private double percentPaid;
 	public Book() {
 		super();
@@ -17,6 +38,18 @@ public class Book {
 		ISBN = iSBN;
 		this.salePrice = salePrice;
 		this.avgDaysToSell = avgDaysToSell;
+		this.percentPaid = getPercentPaid();
+	}
+	public Book(String title, String author) {
+		super();
+		this.title = title;
+		this.author = author;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
 	}
 	public String getTitle() {
 		return title;

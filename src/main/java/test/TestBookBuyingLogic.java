@@ -8,8 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import model.Book;
-import model.BookBuyingLogic;
-
+import controller.BookBuyingLogic;
 public class TestBookBuyingLogic {
 	BookBuyingLogic bbl = new BookBuyingLogic();
 	Book prime = new Book("Where the Crawdads Sing", "Delia Owens", "0735219095", 12.99, 2);

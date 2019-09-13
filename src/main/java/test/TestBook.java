@@ -18,25 +18,25 @@ public class TestBook {
 	//fails the whole test will fail. 
 	public void testGetPercentPaid() {
 		one.setAvgDaysToSell(149);
-		assertEquals(one.getPercentPaid(), .10, 0);
+		assertEquals(.10, one.getPercentPaid(), 0);
 		one.setAvgDaysToSell(150);
-		assertEquals(one.getPercentPaid(), .05, 0);
+		assertEquals(.05, one.getPercentPaid(), 0);
 		one.setAvgDaysToSell(100);
-		assertEquals(one.getPercentPaid(), .10, 0);
+		assertEquals(.10, one.getPercentPaid(), 0);
 		one.setAvgDaysToSell(99);
-		assertEquals(one.getPercentPaid(), .20, 0);
+		assertEquals(.20, one.getPercentPaid(), 0);
 		one.setAvgDaysToSell(75);
-		assertEquals(one.getPercentPaid(), .20, 0);
+		assertEquals(.20, one.getPercentPaid(), 0);
 		one.setAvgDaysToSell(74);
-		assertEquals(one.getPercentPaid(), .30, 0);
+		assertEquals(.30, one.getPercentPaid(), 0);
 		one.setAvgDaysToSell(30);
-		assertEquals(one.getPercentPaid(), .30, 0);
+		assertEquals(.30, one.getPercentPaid(), 0);
 		one.setAvgDaysToSell(29);
-		assertEquals(one.getPercentPaid(), .40, 0);
+		assertEquals(.40, one.getPercentPaid(), 0);
 		one.setAvgDaysToSell(7);
-		assertEquals(one.getPercentPaid(), .40, 0);
+		assertEquals(.40, one.getPercentPaid(), 0);
 		one.setAvgDaysToSell(6);
-		assertEquals(one.getPercentPaid(), .50, 0);
+		assertEquals(.50, one.getPercentPaid(), 0);
 	}
 	
 }
