@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Index</title>
+<style>
+	body {
+	background-color: gainsboro;
+	}
+	ul {
+	text-align: right;
+	margin-right: 40%;
+	}
+	li {
+	margin: 10px;
+	padding: 10px;
+	}
+
+</style>
+</head>
+<body>
+<h1 style="text-align: center;">Book Buying Module</h1>
+<form action = "addItemServlet" method="post">
+<ul style="list-style:none;">
+<li>Title : <input type ="text" name = "title"></li>
+<li>Author  : <input type = "text" name = "author"></li>
+<li>ISBN : <input type ="text" name = "ISBN"></li>
+<li>Sale Price : <input type = "text" name = "salePrice"></li>
+<li>Average Days to Sell (in whole days) : <input type = "text" name = "avgDaysToSell"></li>
+</ul>
+<input type = "submit" value="Add Item">
+</form> <br />
+<a href = "viewAllItems">View the complete list</a>
+</body>
+</html>

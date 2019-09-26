@@ -110,4 +110,10 @@ public class BookBuyingLogic {
 		return foundItems;
 	}
 
+	public List<Book> showAllItems() {
+		EntityManager em = emfactory.createEntityManager();
+		List<Book> allItems = em.createQuery("SELECT b FROM Book b").getResultList();
+		return allItems;
+	}
+
 }
